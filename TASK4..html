@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPEASY.com</title>
+</head>
+<body>
+    <h1>SHOPEASY</h1>
+    <h2>Where Product Meets People</h2>
+     <section>
+            <h3>Features</h3>
+            <ul>
+                <li>SHOP</li>
+                <li>PAYMENT</li>
+                <li>DELIVERY</li>
+                <li>CUSTOMER CARE</li>
+            </ul>
+        </section>
+         <section>
+            <h4>Login</h4>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <button type="submit">enter</button>
+            </form>
+        </section>
+    <button id="colorChangeButton">Change Background Color</button>
+
+    <script>
+        // Function to change background color
+        function changeBackgroundColor() {
+            // Generate a random color
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        
+        document.getElementById('colorChangeButton').addEventListener('click', changeBackgroundColor);
+    </script>
+    <footer>
+        <p>&copy; 2024 SHOPEASY. All rights reserved.</p>
+    </footer>
+</body>
+<style>
+    h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: system-ui;
+          
+        }
+        h2{
+            
+            text-align: center;
+            font-size: 40px;
+            font-family: system-ui;
+        }
+        h4{
+            text-align: center;
+        }
+        form {
+            margin: 2em 0;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+</style>
+</html>
+
